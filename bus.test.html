@@ -3,10 +3,10 @@
 <head>
 	<script type="text/javascript" src="bus.min.js"></script>
 	<script type="text/javascript">
-		Bus.start();
-		Bus.every(Bus.time.sec,function(){
-			console.log(Bus.time.to('sec'));
-		});
+		Bus.start(1);
+		Bus.every(Bus.time.mil,function(){
+		    console.log('Current bus is at:'+Bus.time.to('sec')+'sec');
+		  });
 	</script>
 	<style>
 	.bar-bg

@@ -57,7 +57,7 @@ var Bus = {
 		if(!n)
 			this.delay = 100;
 		else
-			this.delay = n;
+			this.delay = 1000/n;
 		Bus.timer=setTimeout(Bus.helper,Bus.delay); 
 	}, 
 	run : function(){
