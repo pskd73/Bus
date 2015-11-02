@@ -1,0 +1,23 @@
+<html>
+<title>Bus Test</title>
+<head>
+	<script type="text/javascript" src="bus.min.js"></script>
+	<script type="text/javascript">
+		Bus.start();
+		Bus.every(Bus.time.sec,function(){
+			console.log(Bus.time.to('sec'));
+		});
+	</script>
+	<style>
+	.bar-bg
+	{
+
+	}
+	</style>
+</head>
+<body>
+	<div class="bar-bg">
+
+	</div>
+</body>
+</html>
